@@ -1,1 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color:#1E293B;
+    color: #F1F5F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.img{
+    height: 50px;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #F1F5F9;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Main */
+main {
+    background-color: #0F172A;
+    padding: 2rem;
+}
+
+
+
+
+
+
+/* Intro */
+.intro {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #F1F5F9;
+}
+
+.intro img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/* Cards */
+.cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+    color: #F1F5F9;
+}
+
+.card {
+    background: #1E293B;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+
+.card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #808080;
+    color: #F1F5F9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #F1F5F9;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Computadora */
+@media (min-width: 1024px) {
+    .intro {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .intro .texto {
+        flex: 1;
+    }
+
+    .intro .imagen {
+        flex: 1;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
